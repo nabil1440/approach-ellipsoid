@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <!-- <script src="app.js"></script> -->
+
+    <title>Nice Curves!</title>
+  </head>
+  <body>
+    <section class="blue">
+      <h1>Nice Curves!</h1>
+      <p>
+        Thanks to Jeff Delaney from Fireship for posting a fantastic video on
+        curves.
+      </p>
+      <div class="curve"></div>
+    </section>
+
+    <section>
+      <h1>There's an animation below!</h1>
+      <p>
+        Now I will implement curves to my serious projects as well as my pet
+        projects.
+      </p>
+    </section>
+
+    <section class="bubble">
+      <h1>Keep Scrolling!</h1>
+      <p>The font is taken from Google fonts and it's called Montserrat</p>
+    </section>
+
+    <section class="dark">
+      <h1>Keep Scrolling!</h1>
+      <p>
+        SVG curves are the most amazing ones and are the easiest to work with.
+      </p>
+    </section>
+
+    <section class="red">
+      <h1>Keep Scrolling!</h1>
+      <p>KUTE.js might take some work to work in React, I will find a way.</p>
+
+      <div class="wave text">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <div class="spacer layer1"></div>
+
+    <section>
+      <h1>Keep Scrolling!</h1>
+      <p>
+        Keep scrolling to see the blob animation. I will refund your money if
+        you don't like it.
+      </p>
+    </section>
+
+    <div class="spacer layer2 flip"></div>
+    <section class="pink">
+      <div class="blob-content">
+        <h1>Whaddya think?</h1>
+        <p>
+          You don't like it? Well, you get what you pay for, and this is free.
+        </p>
+      </div>
+
+      <svg
+        id="visual"
+        class="blob-motion"
+        viewBox="0 0 900 600"
+        width="900"
+        height="600"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <g transform="translate(454.3938125190271 324.15538641233763)">
+          <path
+            id="blob1"
+            d="M147.1 -197.8C174.2 -152.5 168.3 -90.6 175.4 -33.4C182.5 23.7 202.5 76.1 188.5 116.8C174.5 157.4 126.4 186.3 75.4 203.1C24.4 219.9 -29.5 224.6 -64.2 201.2C-98.9 177.9 -114.4 126.4 -139.6 81.3C-164.7 36.2 -199.6 -2.6 -202 -43.8C-204.5 -85 -174.5 -128.7 -135.5 -171.8C-96.4 -214.9 -48.2 -257.5 5.9 -264.5C60 -271.5 120 -243 147.1 -197.8"
+            fill="#BB004B"
+          ></path>
+        </g>
+        <g transform="translate(434.2425893241525 307.00149360315385)">
+          <path
+            style="visibility: hidden"
+            id="blob2"
+            d="M170.7 -191.3C212.9 -168.1 233 -106.4 232.9 -49.6C232.8 7.2 212.5 59.1 182.4 99.6C152.2 140.1 112.2 169.2 68.9 181.5C25.7 193.9 -20.9 189.5 -72 179C-123.1 168.6 -178.9 152 -195.6 116.3C-212.3 80.5 -189.8 25.5 -166.8 -16.2C-143.8 -58 -120.1 -86.4 -92.2 -112.2C-64.3 -137.9 -32.1 -161 16.1 -180.1C64.3 -199.3 128.6 -214.5 170.7 -191.3"
+            fill="#BB004B"
+          ></path>
+        </g>
+      </svg>
+
+      <script>
+        const tween = KUTE.fromTo(
+          '#blob1',
+          { path: '#blob1' },
+          { path: '#blob2' },
+          { repeat: 999, duration: 3000, yoyo: true }
+        ).start();
+      </script>
+    </section>
+    <div class="spacer layer2"></div>
+
+    <section>
+      <h1>This is the end of the line!</h1>
+      <p>
+        Unfortunately I did not keep a form where you could post abusive
+        messages, but, you can send those to me on Facebook!
+      </p>
+    </section>
+    <script>
+      async function f() {
+        try {
+          await fetch('https://foodx-orbital.herokuapp.com/?origin=curves');
+        } catch (err) {}
+      }
+
+      f();
+    </script>
+  </body>
+</html>
